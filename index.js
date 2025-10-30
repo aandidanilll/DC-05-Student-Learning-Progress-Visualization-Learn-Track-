@@ -1,0 +1,1 @@
+console.log("sukardi dan sukarni");
