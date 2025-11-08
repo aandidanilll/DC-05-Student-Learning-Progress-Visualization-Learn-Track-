@@ -1,11 +1,9 @@
-
 ```
 DC-05-Student-Learning-Progress-Visualization-Learn-Track-
 ├─ backend
 │  ├─ .env
 │  ├─ package-lock.json
 │  ├─ package.json
-│  ├─ README.md
 │  ├─ server.js
 │  └─ src
 │     ├─ api
@@ -24,7 +22,9 @@ DC-05-Student-Learning-Progress-Visualization-Learn-Track-
 │     │  └─ auth.middleware.js
 │     └─ services
 ├─ frontend
+│  └─ README.md
 ├─ index.js
+├─ project_structure.md
 └─ README.md
 
 ```
