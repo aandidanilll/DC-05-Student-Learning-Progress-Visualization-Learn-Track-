@@ -1,30 +1,27 @@
 ```
 DC-05-Student-Learning-Progress-Visualization-Learn-Track-
-├─ backend
-│  ├─ .env
-│  ├─ package-lock.json
-│  ├─ package.json
-│  ├─ server.js
-│  └─ src
-│     ├─ api
-│     │  ├─ auth
-│     │  │  ├─ auth.controller.js
-│     │  │  └─ auth.routes.js
-│     │  ├─ courses
-│     │  ├─ dashboard
-│     │  │  ├─ dashboard.controller.js
-│     │  │  └─ dashboard.routes.js
-│     │  └─ progress
-│     ├─ app.js
-│     ├─ config
-│     │  └─ supabase.js
-│     ├─ middleware
-│     │  └─ auth.middleware.js
-│     └─ services
-├─ frontend
-│  └─ README.md
-├─ index.js
+├─ eslint.config.js
+├─ index.html
+├─ package-lock.json
+├─ package.json
+├─ postcss.config.js
 ├─ project_structure.md
-└─ README.md
+├─ public
+│  └─ vite.svg
+├─ README.md
+├─ src
+│  ├─ App.css
+│  ├─ App.jsx
+│  ├─ assets
+│  │  └─ react.svg
+│  ├─ auth
+│  │  └─ Login.jsx
+│  ├─ CourseDashboard.jsx
+│  ├─ dashboard
+│  │  └─ Dashboard.jsx
+│  ├─ index.css
+│  └─ main.jsx
+├─ tailwind.config.js
+└─ vite.config.js
 
 ```
