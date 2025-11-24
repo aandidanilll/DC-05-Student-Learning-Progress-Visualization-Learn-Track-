@@ -1,24 +1,27 @@
-import { useState } from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import Login from "./auth/Login.jsx";
 import Dashboard from "./dashboard/Dashboard.jsx";
 
 export default function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [email, setEmail] = useState("");
-
-  const handleLogin = (userEmail) => {
-    setEmail(userEmail);
-    setIsLoggedIn(true);
-  };
+  const navigate = useNavigate();
 
   const handleLogout = () => {
-    setIsLoggedIn(false);
-    setEmail("");
+    localStorage.removeItem("authToken");
+    localStorage.removeItem("user");
+    navigate("/");
   };
 
-  if (!isLoggedIn) {
-    return <Login onLogin={handleLogin} />;
-  }
+  return (
+    <Routes>
+      {/* Route untuk Halaman Login (Halaman Utama) */}
+      <Route path="/" element={<Login />} />
 
-  return <Dashboard email={email} onLogout={handleLogout} />;
+      {/* Route untuk Halaman Dashboard */}
+      {/* Kita oper props onLogout agar tombol logout di Dashboard bisa bekerja */}
+      <Route
+        path="/dashboard"
+        element={<Dashboard onLogout={handleLogout} />}
+      />
+    </Routes>
+  );
 }
